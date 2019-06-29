@@ -10,6 +10,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "type-check": "tsc",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -24,7 +25,8 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
   },
   "repository": {
     "type": "git",

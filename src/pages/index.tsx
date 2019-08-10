@@ -1,4 +1,7 @@
-import React from "react"
-import styled from "@emotion/styled"
+import React from 'react';
+import styled from '@emotion/styled';
+import Layout from '../components/Layout'
 
-export default () => <div>Hello world!</div>
+export default () => (
+  <Layout>Hello</Layout>
+);

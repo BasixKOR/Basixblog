@@ -1,16 +1,21 @@
 import React from 'react';
 import { Holder, Header, HeaderItem } from '../components/layoutComponents';
+import { ClassNames } from '@emotion/core';
 
 const Layout: React.FC = ({ children }) => (
   <Holder>
     <Header>
       Basixblog
-      <HeaderItem to="/posts">
-        Posts
-      </HeaderItem>
+      <ClassNames>
+        {({ css }) => (
+          <HeaderItem to="/posts" activeClassName={css({ color: '#30bfef' })}>
+            Posts
+          </HeaderItem>
+        )}
+      </ClassNames>
     </Header>
     {children}
   </Holder>
-)
+);
 
-export default Layout
+export default Layout;

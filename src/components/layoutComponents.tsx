@@ -25,7 +25,7 @@ export const HeaderItem = styled(Link)`
   display: block;
   height: 100%;
   text-decoration-line: none;
-  color: #30bfef;
+  color: white;
   font-size: 1rem;
   margin-right: .5rem;
   &:first-child {

@@ -3,15 +3,15 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+require('dotenv').config();
 module.exports = {
   plugins: [
-    `gatsby-plugin-emotion`,
+    'gatsby-plugin-emotion',
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: `otu6gxcj51hh`,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+        spaceId: 'otu6gxcj51hh',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
@@ -19,11 +19,11 @@ module.exports = {
       options: {
         custom: {
           families: ['Spoqa Han Sans'],
-          urls: ['//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css']
-        }
-      }
+          urls: ['//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css'],
+        },
+      },
     },
     'gatsby-plugin-typescript',
-    'gatsby-plugin-root-import'
-  ]
-}
+    'gatsby-plugin-root-import',
+  ],
+};
